@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--text-primary: #1c2654;
+	--text-secondary: #515a83;
+	--button-primary: #01b88e;
+	--button-secondary: #009e79;
+}
+
+body {
+	background-color: white;
+	color: var(--text-primary);
+	font-family: 'Lato', sans-serif;
+}
+.container {
+	margin: 0 auto;
+}
