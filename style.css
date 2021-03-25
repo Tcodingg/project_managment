@@ -4,17 +4,175 @@
 	box-sizing: border-box;
 }
 :root {
-	--text-primary: #1c2654;
-	--text-secondary: #515a83;
+	--primary-color: #1c2654;
+	--secondary-color: #515a83;
 	--button-primary: #01b88e;
 	--button-secondary: #009e79;
 }
 
 body {
 	background-color: white;
-	color: var(--text-primary);
+	color: var(--primary-color);
 	font-family: 'Lato', sans-serif;
 }
 .container {
 	margin: 0 auto;
+	width: 100%;
+	max-width: 1370px;
+	padding: 0px 35px;
+}
+header {
+	width: 100%;
+	background-position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 12vh;
+	z-index: 300;
+	background: var(--primary-color);
+}
+.header-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 102;
+	height: 12vh;
+	width: 100%;
+	background: var(--primary-color);
+	z-index: 100;
+}
+.logo {
+	color: white;
+	z-index: 200;
+}
+/* -----------------------Menu-------------------- */
+.burger-menu {
+	height: 30px;
+	width: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 1000;
+	transition: all 0.65s ease-in-out;
+}
+.line {
+	height: 2px;
+	width: 30px;
+	background: white;
+	transition: all 0.35s ease-in-out;
+	border-radius: 50px;
+}
+.line::before,
+.line::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 30px;
+	background: white;
+	transition: all 0.35s ease-in-out;
+	border-radius: 50px;
+}
+.line::before {
+	transform: translateY(-7px);
+}
+.line::after {
+	transform: translateY(7px);
+}
+.menu {
+	position: absolute;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background: var(--primary-color);
+	top: -1000px;
+	left: 0;
+	transition: all 0.35s ease-in-out;
+}
+.menu li {
+	color: white;
+	margin-top: 30px;
+	font-size: 25px;
+}
+.burger-menu:hover .line {
+	background: transparent;
+}
+.burger-menu:hover .line::before {
+	transform: rotate(-45deg);
+}
+.burger-menu:hover .line::after {
+	transform: rotate(45deg);
+}
+.burger-menu:hover > .menu {
+	top: 0px;
+}
+
+/*--------------------hero--------------------*/
+
+.hero {
+	display: flex;
+	flex-direction: column;
+}
+.hero-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 50px;
+}
+.hero-info h1 {
+	font-size: 40px;
+}
+.hero-info p {
+	font-size: 20px;
+	margin-top: 30px;
+	line-height: 1.7;
+}
+.call-to-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+.call-to-action a {
+	padding: 20px 40px;
+	background: var(--button-primary);
+	margin-top: 10px;
+	border-width: 2px;
+	width: 200px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	border-radius: 50px;
+
+	transition: all 0.35s ease-in-out;
+}
+.call-to-action a:hover {
+	background: var(--button-secondary);
+}
+.hero figure {
+}
+.hero figure img {
+	width: 100%;
+}
+.powerful {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	text-align: center;
+}
+.powerful h1 {
+	font-size: 40px;
+}
+.powerful p {
+	font-size: 20px;
+	line-height: 1.7;
 }
