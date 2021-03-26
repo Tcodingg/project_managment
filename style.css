@@ -219,3 +219,26 @@ header {
 	line-height: 1.7;
 	margin-top: 20px;
 }
+
+.review_card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 0px;
+}
+
+.review_card article {
+	margin-top: 40px;
+	padding: 40px 30px;
+	text-align: center;
+	box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%);
+	border-radius: 50px;
+	color: #636781;
+}
+.review_card article p {
+	margin-bottom: 30px;
+}
+.review_card .customer_info p {
+	margin: 0;
+}
