@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-size: 20px;
 }
 :root {
 	--primary-color: #1c2654;
@@ -163,7 +164,9 @@ header {
 	width: 100%;
 }
 .powerful {
-	margin-top: 50px;
+	/* margin-top: 50px;
+	margin-bottom: 50px; */
+	margin: 50px 0px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -172,7 +175,47 @@ header {
 .powerful h1 {
 	font-size: 40px;
 }
+
 .powerful p {
 	font-size: 20px;
 	line-height: 1.7;
+}
+
+.info h2 {
+	font-size: 17px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	color: var(--button-primary);
+}
+.info h1 {
+	font-size: 32px;
+	margin-bottom: 30px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.info p {
+	font-size: 20px;
+	line-height: 1.7;
+}
+.info figure img {
+	margin: 30px 0 80px 0;
+	width: 100%;
+}
+
+/* ----------------what customers say--------- */
+.customer {
+	background: red;
+}
+.customers h1 {
+	font-size: 38px;
+
+	text-align: center;
+}
+.customers h1:first-letter {
+	text-transform: uppercase;
+}
+.customers p {
+	font-size: 20px;
+	line-height: 1.7;
+	margin-top: 20px;
 }
