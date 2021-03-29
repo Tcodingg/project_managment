@@ -7,10 +7,10 @@
 :root {
 	--primary-color: #1c2654;
 	--secondary-color: #515a83;
+	--tertiary-color: #5d627d;
 	--button-primary: #01b88e;
 	--button-secondary: #009e79;
 }
-
 body {
 	background-color: white;
 	color: var(--primary-color);
@@ -21,29 +21,26 @@ body {
 	width: 100%;
 	max-width: 1370px;
 	padding: 0px 35px;
+	
 }
 header {
-	/* position: relative; */
 	width: 100%;
-	/* background-position: absolute; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 70px;
 	z-index: 300;
-	background: var(--primary-color);
+	/* background: var(--primary-color); */
 }
-.header-background {
+.header-background{
 	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: 102;
+	top: 0;
+	left: 0;
 	height: 70px;
-	
 	background: var(--primary-color);
-	/* background-color: red; */
+	width: 100%;
+	z-index: -1;
 
-	z-index: 100;
 }
 .logo {
 	color: white;
@@ -139,6 +136,7 @@ header {
 	font-size: 20px;
 	margin-top: 30px;
 	line-height: 1.7;
+
 }
 .call-to-action {
 	display: flex;
@@ -160,7 +158,6 @@ header {
 	font-size: 20px;
 	color: white;
 	border-radius: 50px;
-
 	transition: all 0.35s ease-in-out;
 }
 .call-to-action a:hover {
@@ -187,6 +184,7 @@ header {
 .powerful p {
 	font-size: 21px;
 	line-height: 1.7;
+	color: var(--secondary-color);
 }
 /* ----------------------------------info------------------------------- */
 .info {
@@ -209,6 +207,7 @@ header {
 .info p {
 	font-size: 20px;
 	line-height: 1.7;
+	color: var(--secondary-color);
 }
 .info figure img {
 	margin: 30px 0 80px 0;
@@ -218,6 +217,9 @@ header {
 }
 
 /* ----------------what customers say--------- */
+.testimonial p{
+	color: #515a83;
+}
 
 .customers h1 {
 	font-size: 38px;
@@ -240,7 +242,9 @@ header {
 	justify-content: center;
 	align-items: center;
 	margin: 40px 0px;
+	
 }
+
 
 .review_card article {
 	margin-top: 40px;
@@ -253,6 +257,10 @@ header {
 }
 .review_card article p {
 	margin-bottom: 30px;
+	color: var(--secondary-color);
+	font-size: 15px;
+	color: var(--tertiary-color);
+	line-height: 1.75em;
 }
 .customer_info {
 	display: flex;
@@ -264,9 +272,18 @@ header {
 .customer_info p {
 	font-size: 16px;
 	margin: 0;
+	columns: var(--secondary-color);
 }
 .customer_info p span {
 	font-size: 0.85em;
+}
+
+.review_card .customer_details p{
+	line-height: 1em;
+}
+.review_card .customer_details p span{
+	
+	font-size: 11px;
 }
 .customer_info img {
 	border-radius: 50%;
@@ -282,6 +299,9 @@ header {
 }
 .review_card .customer_info p {
 	margin: 0;
+}
+.customers{
+	text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -363,33 +383,33 @@ header {
 	.powerful section{
 		width: 70%;
 	}
-	.info-wrapper .info article:nth-child(1){
-		/* background: red; */
-		/* border: 1px solid black; */
-	}
-	
+
 	.call-to-action {
 		flex-direction: row;
 	}
-	/* .info-description{
-	background: yellow;
-	} */
+	
 	.info .info-description{
 		height: 400px;
 		justify-content: center;
-		/* background: yellow; */
+
+	}
+	.customers{
+		padding: 0 200px;
 	}
 	.review_card article{
-		width: 350px
-
+		max-width: 300px;
 	}
 	.review_card {
-
 		flex-direction: row;
+		flex-wrap: nowrap;
 		margin-top: 10px;
 		justify-content: space-around;
-	
-		
+		gap: 20px;
 	}
+	.customers{
+		padding: 0 200px;
+	}
+
+
 
 }
