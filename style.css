@@ -236,6 +236,7 @@ header {
 .review_card {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 40px 0px;
@@ -323,7 +324,8 @@ header {
 	/* -----------------------powerful----------------- */
 	.info {
 		flex-direction: row;
-		gap: 30px;
+		gap: 100px;
+		
 	}
 	.info:nth-child(even) {
 		flex-direction: row-reverse;
@@ -353,8 +355,17 @@ header {
 		width: 100%;
 	
 	}
+	.info{
+		gap:0px;
+		padding: 0 130px;
+	}
+	
 	.powerful section{
 		width: 70%;
+	}
+	.info-wrapper .info article:nth-child(1){
+		/* background: red; */
+		/* border: 1px solid black; */
 	}
 	
 	.call-to-action {
@@ -368,4 +379,17 @@ header {
 		justify-content: center;
 		/* background: yellow; */
 	}
+	.review_card article{
+		width: 350px
+
+	}
+	.review_card {
+
+		flex-direction: row;
+		margin-top: 10px;
+		justify-content: space-around;
+	
+		
+	}
+
 }
