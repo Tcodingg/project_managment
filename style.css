@@ -102,7 +102,7 @@ header {
 .menu li {
 	color: white;
 
-	font-size: 25px;
+	font-size: 20px;
 	list-style: none;
 }
 .burger-menu.show-menu .line {
@@ -124,6 +124,7 @@ header {
 .hero {
 	display: flex;
 	flex-direction: column;
+	
 }
 .hero-info {
 	display: flex;
@@ -187,10 +188,12 @@ header {
 	font-size: 21px;
 	line-height: 1.7;
 }
+/* ----------------------------------info------------------------------- */
 .info {
 	display: flex;
 	flex-direction: column;
 }
+
 .info h2 {
 	font-size: 18px;
 	margin-bottom: 8px;
@@ -210,6 +213,8 @@ header {
 .info figure img {
 	margin: 30px 0 80px 0;
 	width: 100%;
+	/* background: blue; */
+	max-height: 400px;
 }
 
 /* ----------------what customers say--------- */
@@ -282,7 +287,6 @@ header {
 	header{
 		position: relative;
 	}
-
 	.burger-menu{
 		display: none;
 	
@@ -291,17 +295,14 @@ header {
 		width: 50%;
 	}
 	.menu{
-
 	position: static;
 	flex-direction: row;
 	height: 100%;
 	transition: all 0s;
-
 	}
 	.menu li{
 		margin-left: 20px;
 	}
-
 	.hero {
 		flex-direction: row;
 		justify-content: center;
@@ -316,7 +317,6 @@ header {
 		font-size: 21px;
 		line-height: 1.5em;
 	}
-
 	.call-to-action a {
 		margin-right: 10px;
 	}
@@ -338,15 +338,34 @@ header {
 		margin-bottom: 150px;
 		padding: 0 30px;
 	}
-	
 	.info figure {
-		width: 60%;
+		width: 50%;
 		padding: 0px 30px;
 	}
 }
-
 @media (min-width: 883px) {
+	.hero .hero-info{
+		width: 40%;
+	}
+	.powerful{
+		display: flex;
+		align-items: center;
+		width: 100%;
+	
+	}
+	.powerful section{
+		width: 70%;
+	}
+	
 	.call-to-action {
 		flex-direction: row;
+	}
+	/* .info-description{
+	background: yellow;
+	} */
+	.info .info-description{
+		height: 400px;
+		justify-content: center;
+		/* background: yellow; */
 	}
 }
