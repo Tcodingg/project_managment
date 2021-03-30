@@ -349,8 +349,58 @@ header {
 }
 
 .form {
-	background: greenyellow;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 100%;
+	max-width: 500px;
+
+	border-radius: 5px;
 }
+
+.form-control {
+
+	position: relative;
+	margin-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.form-control i,
+small {
+	position: absolute;
+}
+
+.form-control small {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 17px;
+}
+
+.form-control i {
+	top: 5px;
+	right: 0px;
+}
+
+.form-control input {
+	width: 100%;
+}
+
+.form button {
+	margin-top: 20px;
+	text-transform: uppercase;
+	color: white;
+	background: var(--primary-color);
+	border: none;
+	padding: 5px;
+	font-size: 16px;
+
+}
+
+
 
 @media (min-width: 768px) {
 	header {
