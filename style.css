@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 20px;
+	text-decoration: none;
 }
+
 :root {
 	--primary-color: #1c2654;
 	--secondary-color: #515a83;
@@ -11,18 +13,21 @@
 	--button-primary: #01b88e;
 	--button-secondary: #009e79;
 }
+
 body {
 	background-color: white;
 	color: var(--primary-color);
 	font-family: 'Lato', sans-serif;
 }
+
 .container {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1370px;
 	padding: 0px 35px;
-	
+
 }
+
 header {
 	width: 100%;
 	display: flex;
@@ -32,7 +37,8 @@ header {
 	z-index: 300;
 	/* background: var(--primary-color); */
 }
-.header-background{
+
+.header-background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -42,10 +48,12 @@ header {
 	z-index: -1;
 
 }
+
 .logo {
 	color: white;
 	z-index: 200;
 }
+
 /* -----------------------Menu-------------------- */
 .burger-menu {
 	height: 30px;
@@ -58,6 +66,7 @@ header {
 	z-index: 1000;
 	transition: all 0.65s ease-in-out;
 }
+
 .line {
 	height: 2px;
 	width: 30px;
@@ -65,6 +74,7 @@ header {
 	transition: all 0.35s ease-in-out;
 	border-radius: 50px;
 }
+
 .line::before,
 .line::after {
 	content: '';
@@ -75,12 +85,15 @@ header {
 	transition: all 0.35s ease-in-out;
 	border-radius: 50px;
 }
+
 .line::before {
 	transform: translateY(-7px);
 }
+
 .line::after {
 	transform: translateY(7px);
 }
+
 .menu {
 	position: absolute;
 	top: -2000px;
@@ -96,23 +109,32 @@ header {
 	transition: all 0.35s ease-in-out;
 
 }
+
+.menu a {
+	color: white;
+	font-size: 18px;
+}
+
 .menu li {
 	color: white;
 
 	font-size: 20px;
 	list-style: none;
 }
+
 .burger-menu.show-menu .line {
 	background: transparent;
 }
+
 .burger-menu.show-menu .line::before {
 	transform: rotate(-45deg);
 }
+
 .burger-menu.show-menu .line::after {
 	transform: rotate(45deg);
 }
 
-.menu.show-menu{
+.menu.show-menu {
 	top: 0px;
 }
 
@@ -121,23 +143,27 @@ header {
 .hero {
 	display: flex;
 	flex-direction: column;
-	
+
 }
+
 .hero-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	padding-top: 50px;
 }
+
 .hero-info h1 {
 	font-size: 40px;
 }
+
 .hero-info p {
 	font-size: 20px;
 	margin-top: 30px;
 	line-height: 1.7;
 
 }
+
 .call-to-action {
 	display: flex;
 	flex-direction: column;
@@ -160,14 +186,17 @@ header {
 	border-radius: 50px;
 	transition: all 0.35s ease-in-out;
 }
+
 .call-to-action a:hover {
 	background: var(--button-secondary);
 }
-.hero figure {
-}
+
+.hero figure {}
+
 .hero figure img {
 	width: 100%;
 }
+
 .powerful {
 	/* margin-top: 50px;
 	margin-bottom: 50px; */
@@ -177,6 +206,7 @@ header {
 	gap: 30px;
 	text-align: center;
 }
+
 .powerful h1 {
 	font-size: 40px;
 }
@@ -186,6 +216,7 @@ header {
 	line-height: 1.7;
 	color: var(--secondary-color);
 }
+
 /* ----------------------------------info------------------------------- */
 .info {
 	display: flex;
@@ -198,17 +229,20 @@ header {
 	text-transform: uppercase;
 	color: var(--button-primary);
 }
+
 .info h1 {
 	font-size: 32px;
 	margin-bottom: 30px;
 	margin-bottom: 20px;
 	text-transform: capitalize;
 }
+
 .info p {
 	font-size: 20px;
 	line-height: 1.7;
 	color: var(--secondary-color);
 }
+
 .info figure img {
 	margin: 30px 0 80px 0;
 	width: 100%;
@@ -217,7 +251,7 @@ header {
 }
 
 /* ----------------what customers say--------- */
-.testimonial p{
+.testimonial p {
 	color: #515a83;
 }
 
@@ -226,9 +260,11 @@ header {
 
 	text-align: center;
 }
+
 .customers h1:first-letter {
 	text-transform: uppercase;
 }
+
 .customers p {
 	font-size: 20px;
 	line-height: 1.7;
@@ -242,7 +278,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	margin: 40px 0px;
-	
+
 }
 
 
@@ -255,6 +291,7 @@ header {
 	color: #636781;
 	/* max-width: 400px; */
 }
+
 .review_card article p {
 	margin-bottom: 30px;
 	color: var(--secondary-color);
@@ -262,6 +299,7 @@ header {
 	color: var(--tertiary-color);
 	line-height: 1.75em;
 }
+
 .customer_info {
 	display: flex;
 	flex-direction: row;
@@ -274,22 +312,26 @@ header {
 	margin: 0;
 	columns: var(--secondary-color);
 }
+
 .customer_info p span {
 	font-size: 0.85em;
 }
 
-.review_card .customer_details p{
+.review_card .customer_details p {
 	line-height: 1em;
 }
-.review_card .customer_details p span{
-	
+
+.review_card .customer_details p span {
+
 	font-size: 11px;
 }
+
 .customer_info img {
 	border-radius: 50%;
 	width: 60px !important;
 	height: 60px !important;
 }
+
 .customer_details {
 	display: flex;
 	flex-direction: column;
@@ -297,33 +339,44 @@ header {
 	align-items: flex-start;
 	margin-left: 10px;
 }
+
 .review_card .customer_info p {
 	margin: 0;
 }
-.customers{
+
+.customers {
 	text-align: center;
 }
 
+.form {
+	background: greenyellow;
+}
+
 @media (min-width: 768px) {
-	header{
+	header {
 		position: relative;
 	}
-	.burger-menu{
+
+	.burger-menu {
 		display: none;
-	
+
 	}
-	.logo{
+
+	.logo {
 		width: 50%;
 	}
-	.menu{
-	position: static;
-	flex-direction: row;
-	height: 100%;
-	transition: all 0s;
+
+	.menu {
+		position: static;
+		flex-direction: row;
+		height: 100%;
+		transition: all 0s;
 	}
-	.menu li{
+
+	.menu li {
 		margin-left: 20px;
 	}
+
 	.hero {
 		flex-direction: row;
 		justify-content: center;
@@ -331,25 +384,31 @@ header {
 		gap: 30px;
 		height: calc(100vh - 12px);
 	}
+
 	.hero h1 {
 		font-size: 46px;
 	}
+
 	.hero p {
 		font-size: 21px;
 		line-height: 1.5em;
 	}
+
 	.call-to-action a {
 		margin-right: 10px;
 	}
+
 	/* -----------------------powerful----------------- */
 	.info {
 		flex-direction: row;
 		gap: 100px;
-		
+
 	}
+
 	.info:nth-child(even) {
 		flex-direction: row-reverse;
 	}
+
 	.info-description {
 		display: flex;
 		flex-direction: column;
@@ -360,45 +419,52 @@ header {
 		margin-bottom: 150px;
 		padding: 0 30px;
 	}
+
 	.info figure {
 		width: 50%;
 		padding: 0px 30px;
 	}
 }
+
 @media (min-width: 883px) {
-	.hero .hero-info{
+	.hero .hero-info {
 		width: 40%;
 	}
-	.powerful{
+
+	.powerful {
 		display: flex;
 		align-items: center;
 		width: 100%;
-	
+
 	}
-	.info{
-		gap:0px;
+
+	.info {
+		gap: 0px;
 		padding: 0 130px;
 	}
-	
-	.powerful section{
+
+	.powerful section {
 		width: 70%;
 	}
 
 	.call-to-action {
 		flex-direction: row;
 	}
-	
-	.info .info-description{
+
+	.info .info-description {
 		height: 400px;
 		justify-content: center;
 
 	}
-	.customers{
+
+	.customers {
 		padding: 0 200px;
 	}
-	.review_card article{
+
+	.review_card article {
 		max-width: 300px;
 	}
+
 	.review_card {
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -406,7 +472,8 @@ header {
 		justify-content: space-around;
 		gap: 20px;
 	}
-	.customers{
+
+	.customers {
 		padding: 0 200px;
 	}
 
