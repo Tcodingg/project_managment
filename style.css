@@ -348,24 +348,12 @@ header {
 	text-align: center;
 }
 
-.form {
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	width: 100%;
-	max-width: 500px;
-
-	border-radius: 5px;
-}
 
 .form-control {
 
 	position: relative;
 	margin-top: 10px;
 	padding-bottom: 20px;
-
 }
 
 .form-control i,
@@ -378,7 +366,7 @@ small {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 .form-control i {
@@ -421,7 +409,7 @@ small {
 }
 
 .form-control.error small {
-	color: red;
+	color: rgba(250, 0, 0, 0.651);
 	visibility: visible;
 }
 
@@ -439,7 +427,48 @@ small {
 
 }
 
+.form-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/* background: rgb(233, 233, 233); */
+	/* background-color: var(--button-primary); */
+	background-color: var(--button-primary);
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-width: 600px;
+}
 
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+
+	border-radius: 5px;
+}
+
+.form-wrapper h1 {
+	font-size: 35px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.form-wrapper p {
+	font-size: 18px;
+	color: var(--primary-color);
+	text-align: center;
+}
+
+.contact-us {
+	display: flex;
+	flex-direction: column;
+	gap: 10px
+}
 
 @media (min-width: 768px) {
 	header {
@@ -514,6 +543,7 @@ small {
 		padding: 0px 30px;
 	}
 }
+
 
 @media (min-width: 883px) {
 	.hero .hero-info {
