@@ -223,7 +223,7 @@ header {
   background: var(--button-secondary);
 }
 
-.hero figure {}
+
 
 .hero figure img {
   width: 100%;
@@ -493,7 +493,84 @@ small {
   gap: 10px;
 }
 
+.footer {
+  width: 100%;
+  height: 500px;
+  /* position: relative;
+  background: var(--primary-color); */
+  bottom: 0;
+  left: 0;
 
+}
+
+.footer-container {
+  position: absolute;
+  background: var(--primary-color);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.about-us {
+  color: white;
+}
+
+.about-us p {
+
+  margin-top: 10px;
+}
+
+.about-us h2 {
+  text-transform: capitalize;
+  width: 100%;
+  position: relative;
+
+}
+
+.about-us h2::after,
+.payment h2:aftter {
+  content: "";
+  background: rgb(165, 165, 165);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.payment {
+  margin-top: 30px;
+}
+
+.payment p {
+  margin-top: 10px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-link i {
+  margin: 5px 20px 0px 0px;
+}
 
 @media (min-width: 768px) {
   header {
