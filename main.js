@@ -8,7 +8,7 @@ const password2 = document.getElementById("password2");
 const submit = document.getElementById("submit");
 
 const form = document.getElementById("form");
-const completeTracker = [];
+
 
 
 
@@ -112,8 +112,4 @@ function checkCompletion() {
   } else {
     console.log("there is an error");
   }
-}
-
-function completedTrueFalse(input) {
-  completeTracker.push(input);
 }

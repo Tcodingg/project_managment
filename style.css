@@ -223,8 +223,6 @@ header {
   background: var(--button-secondary);
 }
 
-
-
 .hero figure img {
   width: 100%;
 }
@@ -495,12 +493,14 @@ small {
 
 .footer {
   width: 100%;
-  height: 500px;
+  max-width: 1370px;
+  height: 550px;
   /* position: relative;
   background: var(--primary-color); */
   bottom: 0;
   left: 0;
-
+  /* display: flex;
+  align-items: center; */
 }
 
 .footer-container {
@@ -513,6 +513,16 @@ small {
   color: white;
   display: flex;
   flex-direction: column;
+
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .footer p {
@@ -520,39 +530,42 @@ small {
   font-size: 16px;
 }
 
-.about-us {
+.about-us,
+.payment,
+.contact-info {
   color: white;
-}
-
-.about-us p {
-
-  margin-top: 10px;
-}
-
-.about-us h2 {
-  text-transform: capitalize;
-  width: 100%;
   position: relative;
-
-}
-
-.about-us h2::after,
-.payment h2:aftter {
-  content: "";
-  background: rgb(165, 165, 165);
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-}
-
-.payment {
   margin-top: 30px;
 }
 
+.payment i {
+  margin: 15px 10px 0 0;
+  font-size: 30px;
+}
+
+.about-us p,
 .payment p {
   margin-top: 10px;
+  line-height: 1.6;
+}
+
+.about-us h2,
+.payment h2,
+.contact-info h2 {
+  text-transform: capitalize;
+}
+
+.about-us ::after,
+.payment ::after,
+.contact-info::after {
+  content: "";
+
+  background: white;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
 
 .contact-link {
@@ -569,8 +582,10 @@ small {
 }
 
 .contact-link i {
-  margin: 5px 20px 0px 0px;
+  margin: 20px 20px 0px 0px;
 }
+
+
 
 @media (min-width: 768px) {
   header {
@@ -651,6 +666,22 @@ small {
   .info figure {
     width: 50%;
     padding: 0px 30px;
+  }
+
+  .footer {
+    height: 25vh;
+  }
+
+  .about-us,
+  .payment,
+  .contact-info {
+    width: 33.3%;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
   }
 }
 
@@ -742,4 +773,6 @@ small {
   .customers {
     padding: 0 200px;
   }
+
+
 }
