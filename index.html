@@ -14,6 +14,14 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
+
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="scroll.js"></script>
     <title>Project-X</title>
   </head>
 
@@ -28,13 +36,13 @@
             <section class="line"></section>
           </section>
           <nav class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#">Support</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#form">About</a></li>
           </nav>
         </header>
-        <section class="hero">
+        <section id="home" class="hero">
           <article class="hero-info">
             <h1>Project Managment Deconstructed</h1>
             <p>
@@ -51,7 +59,7 @@
           </figure>
         </section>
 
-        <section class="powerful">
+        <section id="services" class="powerful">
           <section>
             <h1>Powerful, yet simple</h1>
             <p>
