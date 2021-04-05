@@ -9,16 +9,6 @@ const submit = document.getElementById("submit");
 
 const form = document.getElementById("form");
 
-const links = document.querySelectorAll('.menu a');
-
-for (let link of links) {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    menu.classList.remove("show-menu");
-    burger.classList.remove('show-menu');
-  })
-}
-
 
 
 burger.addEventListener("click", function () {
@@ -122,4 +112,16 @@ function checkCompletion() {
   } else {
     console.log("there is an error");
   }
+}
+
+//hide mobile menu when its clicked
+const links = document.querySelectorAll('.menu a');
+
+for (let link of links) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    menu.classList.remove("show-menu");
+    burger.classList.remove('show-menu');
+
+  })
 }
