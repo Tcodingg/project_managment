@@ -9,12 +9,22 @@ const submit = document.getElementById("submit");
 
 const form = document.getElementById("form");
 
+const links = document.querySelectorAll('.menu a');
+
+for (let link of links) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    menu.classList.remove("show-menu");
+    burger.classList.remove('show-menu');
+  })
+}
 
 
 
 burger.addEventListener("click", function () {
   menu.classList.toggle("show-menu");
   burger.classList.toggle("show-menu");
+
 });
 submit.addEventListener("click", (e) => {
   e.preventDefault();
