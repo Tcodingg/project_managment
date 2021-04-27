@@ -54,6 +54,10 @@ header {
   z-index: 200;
 }
 
+.logo a {
+  color: white;
+}
+
 /* -----------------------Menu-------------------- */
 .head-wrapper {
   position: fixed;

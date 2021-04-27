@@ -8,6 +8,5 @@ $(".menu a").on("click", function (e) {
       },
       800
     );
-    console.log("its been clicked: ", hash);
   }
 });
