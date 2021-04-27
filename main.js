@@ -9,12 +9,9 @@ const submit = document.getElementById("submit");
 
 const form = document.getElementById("form");
 
-
-
 burger.addEventListener("click", function () {
   menu.classList.toggle("show-menu");
   burger.classList.toggle("show-menu");
-
 });
 submit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -34,42 +31,31 @@ function checkInput() {
     error(name, "please enter your full name");
   } else {
     success(name);
-
   }
   if (emailValue === "") {
     error(email, "email cannot be blank");
-
   } else if (emailRegex.test(emailValue) === false) {
-
     error(email, "email is not valid");
     console.log(emailRegex.test(emailValue));
   } else {
     success(email);
-
   }
 
   if (passwordValue === "") {
     error(password, "password cannot be blank");
-
   } else if (passwordValue.length < 6) {
     error(password, "password cannot be less than 6 characters");
-
   } else {
     success(password);
-
   }
   if (passwordValue !== password2Value) {
     error(password2, "password did not match");
-
   } else if (password2Value === "") {
     error(password2, "please re-enter your password");
-
   } else if (passwordValue.length < 6) {
     error(password2, "password cannot be less than 6 characters");
-
   } else {
     success(password2);
-
   }
 }
 
@@ -81,7 +67,6 @@ function success(inputSelection) {
   const small = formControl.querySelector("small");
   small.innerHTML = "";
   // console.log('success', formControl)
-
 }
 
 function error(inputSelection, message) {
@@ -93,35 +78,33 @@ function error(inputSelection, message) {
   const small = formControl.querySelector("small");
   small.innerHTML = message;
   // console.log('error', formControl);
-
 }
 
 function checkCompletion() {
   //   completed ? console.log("completed") : console.log("there is an error");
   if (
-    name.parentElement.className === 'form-control success' &&
-    email.parentElement.className === 'form-control success' &&
-    password.parentElement.className === 'form-control success' &&
-    password2.parentElement.className === 'form-control success') {
+    name.parentElement.className === "form-control success" &&
+    email.parentElement.className === "form-control success" &&
+    password.parentElement.className === "form-control success" &&
+    password2.parentElement.className === "form-control success"
+  ) {
     setTimeout(() => {
       location.reload(true);
       console.log("completed");
       form.reset();
     }, 500);
-
   } else {
     console.log("there is an error");
   }
 }
 
-//hide mobile menu when its clicked
-const links = document.querySelectorAll('.menu a');
+//============ hide mobile menu when its clicked ==============
+const links = document.querySelectorAll(".menu a");
 
 for (let link of links) {
-  link.addEventListener('click', function (e) {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
     menu.classList.remove("show-menu");
-    burger.classList.remove('show-menu');
-
-  })
+    burger.classList.remove("show-menu");
+  });
 }
