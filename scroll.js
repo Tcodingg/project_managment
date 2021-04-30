@@ -4,7 +4,7 @@ $(".menu a").on("click", function (e) {
   if (this.hash !== "") {
     $("html, body").animate(
       {
-        scrollTop: $(hash).offset().top - 80,
+        scrollTop: $(hash).offset().top - 200,
       },
       800
     );

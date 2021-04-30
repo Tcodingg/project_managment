@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -44,7 +45,13 @@
       </header>
       <section class="container">
         <section id="home" class="hero">
-          <article class="hero-info">
+          <article
+            class="hero-info"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="50"
+            data-aos-offset="0"
+          >
             <h1>Project Managment Deconstructed</h1>
             <p>
               We provide all the best features so you can stop focusing on your
@@ -55,12 +62,24 @@
               <a href="#">Learn More</a>
             </section>
           </article>
-          <figure>
+          <figure
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="50"
+            data-aos-offset="0"
+          >
             <img src="images/hero.svg" alt="LOADING..." />
           </figure>
         </section>
 
-        <section id="services" class="powerful">
+        <section
+          id="services"
+          class="powerful"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-offset="200"
+          data-aos-duration="500"
+        >
           <section>
             <h1>Powerful, yet simple</h1>
             <p>
@@ -73,7 +92,12 @@
         <section class="info-wrapper">
           <section class="info">
             <img id="bc-1" src="images/Ellipse.svg" alt="" />
-            <article class="info-description">
+            <article
+              class="info-description"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <h2>intuitive</h2>
               <h1>Get setup quickly</h1>
               <p>
@@ -81,13 +105,22 @@
                 accusantium ab.
               </p>
             </article>
-            <figure>
+            <figure
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <img src="images/get_setup.svg" alt="" />
             </figure>
           </section>
           <section class="info">
             <img id="bc-2" src="images/Ellipse.svg" alt="" />
-            <article class="info-description">
+            <article
+              class="info-description"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <h2>work together</h2>
               <h1>built for collaboration</h1>
               <p>
@@ -95,13 +128,22 @@
                 accusantium ab.
               </p>
             </article>
-            <figure>
+            <figure
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <img src="images/work_together.svg" alt="" />
             </figure>
           </section>
           <section class="info">
             <img id="bc-1" src="images/Ellipse.svg" alt="" />
-            <article class="info-description">
+            <article
+              class="info-description"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <h2>web and apps</h2>
               <h1>accessible on all your devices</h1>
               <p>
@@ -109,13 +151,22 @@
                 accusantium ab.
               </p>
             </article>
-            <figure>
+            <figure
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <img src="images/accessible.svg" alt="" />
             </figure>
           </section>
           <section class="info">
             <img id="bc-2" src="images/Ellipse.svg" alt="" />
-            <article class="info-description">
+            <article
+              class="info-description"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <h2>available 24/7</h2>
               <h1>backed by an amazing support team</h1>
               <p>
@@ -123,12 +174,23 @@
                 accusantium ab.
               </p>
             </article>
-            <figure>
+            <figure
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+            >
               <img src="images/support.svg" alt="" />
             </figure>
           </section>
         </section>
-        <section id="register" class="form-wrapper">
+        <section
+          id="register"
+          class="form-wrapper"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-offset="200"
+          data-aos-duration="500"
+        >
           <article class="contact-us">
             <h1>Register</h1>
             <p>
@@ -170,7 +232,13 @@
         </section>
 
         <section id="testimonial" class="testimonial">
-          <article class="customers">
+          <article
+            class="customers"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-offset="200"
+            data-aos-duration="500"
+          >
             <h1>what cusotmers are saying</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam
@@ -178,7 +246,13 @@
               Repellat rerum provident.
             </p>
           </article>
-          <section class="review_card">
+          <section
+            class="review_card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-offset="200"
+            data-aos-duration="500"
+          >
             <article>
               <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -270,5 +344,9 @@
         </section>
       </section>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
