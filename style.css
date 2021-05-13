@@ -507,8 +507,14 @@ small {
 
 .contact-us {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
+}
+.contact-us p {
+  max-width: 80%;
+  text-align: center;
 }
 
 .footer {
